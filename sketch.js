@@ -57,7 +57,7 @@ function pascalTriangle(length, l) {
 function ArrayAdd(arr1, arr2, n) {
     arr3 = []
     for (var i = 0; i < arr1.length; i++) {
-        arr3.push(min((arr1[i] + arr2[i])/n, 255))
+        arr3.push((arr1[i] + arr2[i])/n % 255)
     }
     return arr3
 }
